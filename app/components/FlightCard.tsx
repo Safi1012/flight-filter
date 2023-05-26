@@ -12,7 +12,8 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 import { TbArrowMoveRight } from "react-icons/tb";
-import { formatDateToDayMonth } from "@/app/utils/date";
+import { useFormatDayMonth } from "../hooks/useFormatDateDayMonth";
+import { useFormatLocalizePrice } from "../hooks/useFormatLocalizePrice";
 
 export const FlightCard = ({
   departureDate,
@@ -23,11 +24,9 @@ export const FlightCard = ({
   seatAvailability,
 }: PriceOffer) => {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
-  const formattedLocalizedPrice = new Intl.NumberFormat(navigator.language, {
-    style: "currency",
-    currency: price.currency,
-    maximumFractionDigits: 0,
-  }).format(price.amount);
+  const formattedLocalizedPrice = useFormatLocalizePrice(price);
+  const formattedDepartureDate = useFormatDayMonth(departureDate);
+  const formattedReturnDate = useFormatDayMonth(returnDate);
 
   return (
     <Card mb={4}>
@@ -38,9 +37,7 @@ export const FlightCard = ({
               <Text fontSize={"large"} as="b" color={"pink.700"}>
                 {origin}
               </Text>
-              <Text fontSize={"small"}>
-                {formatDateToDayMonth(departureDate)}
-              </Text>
+              <Text fontSize={"small"}>{formattedDepartureDate}</Text>
             </Box>
             <Center>
               <Icon as={TbArrowMoveRight} w={10} h={6} />
@@ -49,7 +46,7 @@ export const FlightCard = ({
               <Text fontSize={"large"} as="b" color={"pink.700"}>
                 {destination}
               </Text>
-              <Text fontSize={"small"}>{formatDateToDayMonth(returnDate)}</Text>
+              <Text fontSize={"small"}>{formattedReturnDate}</Text>
             </Box>
           </Flex>
 
