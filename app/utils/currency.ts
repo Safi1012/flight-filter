@@ -5,6 +5,10 @@
  * @returns The currency symbol if found, otherwise the original currency code.
  */
 export const getCurrencySymbol = (currencyCode: string) => {
+  if (currencyCode === "") {
+    return "";
+  }
+
   const numberFormat = new Intl.NumberFormat("en", {
     style: "currency",
     currency: currencyCode,
