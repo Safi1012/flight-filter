@@ -13,7 +13,6 @@ import {
 } from "@chakra-ui/react";
 import { TbArrowMoveRight } from "react-icons/tb";
 import { formatDateToDayMonth } from "@/app/utils/date";
-import { getCurrencySymbol } from "@/app/utils/currency";
 
 export const FlightCard = ({
   departureDate,
@@ -24,6 +23,11 @@ export const FlightCard = ({
   seatAvailability,
 }: PriceOffer) => {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
+  const formattedLocalizedPrice = new Intl.NumberFormat(navigator.language, {
+    style: "currency",
+    currency: price.currency,
+    maximumFractionDigits: 0,
+  }).format(price.amount);
 
   return (
     <Card mb={4}>
@@ -31,7 +35,7 @@ export const FlightCard = ({
         <Flex justifyContent={"space-between"}>
           <Flex>
             <Box textAlign={"center"}>
-              <Text fontSize={"large"} as="b" color={"pink.800"}>
+              <Text fontSize={"large"} as="b" color={"pink.700"}>
                 {origin}
               </Text>
               <Text fontSize={"small"}>
@@ -42,7 +46,7 @@ export const FlightCard = ({
               <Icon as={TbArrowMoveRight} w={10} h={6} />
             </Center>
             <Box textAlign={"center"}>
-              <Text fontSize={"large"} as="b">
+              <Text fontSize={"large"} as="b" color={"pink.700"}>
                 {destination}
               </Text>
               <Text fontSize={"small"}>{formatDateToDayMonth(returnDate)}</Text>
@@ -62,7 +66,7 @@ export const FlightCard = ({
           )}
           <Center>
             <Text fontSize={"large"} as="b">
-              {price.amount} {getCurrencySymbol(price.currency)}
+              {formattedLocalizedPrice}
             </Text>
           </Center>
         </Flex>
