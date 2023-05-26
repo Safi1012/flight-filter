@@ -3,9 +3,10 @@
 import { CacheProvider } from "@chakra-ui/next-js";
 import { ChakraProvider, extendTheme, Container } from "@chakra-ui/react";
 import { Open_Sans } from "next/font/google";
+import Header from "./components/Header";
 
 const headingFont = Open_Sans({
-  weight: ["800"],
+  weight: ["700"],
   subsets: ["latin"],
 });
 
@@ -53,7 +54,8 @@ export function Providers({ children }: { children: React.ReactNode }) {
   return (
     <CacheProvider>
       <ChakraProvider theme={theme}>
-        <Container maxW={["20em", "40em", "40em", "80em"]}>
+        <Header></Header>
+        <Container maxW={["20em", "40em", "40em", "80em"]} pb={32}>
           {children}
         </Container>
       </ChakraProvider>
