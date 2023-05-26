@@ -1,6 +1,6 @@
 "use client";
 
-import { Box, Center, Container } from "@chakra-ui/react";
+import { Box, Container } from "@chakra-ui/react";
 import Link from "next/link";
 import Image from "next/image";
 import paperPlane from "../../public/paper_plane.svg";
