@@ -1,0 +1,288 @@
+[
+  {
+    "origin": "JFK",
+    "destination": "LHR",
+    "departureDate": "2023-06-15",
+    "returnDate": "2023-06-22",
+    "seatAvailability": 12,
+    "price": {
+      "amount": 750,
+      "currency": "EUR"
+    },
+    "offerType": "amadeusBestPrice",
+    "uuid": "a1b2c3d4e5f6g7h8i9j0"
+  },
+  {
+    "origin": "JFK",
+    "destination": "LHR",
+    "departureDate": "2023-07-01",
+    "returnDate": "2023-07-08",
+    "seatAvailability": 8,
+    "price": {
+      "amount": 800,
+      "currency": "EUR"
+    },
+    "offerType": "amadeusBestPrice",
+    "uuid": "k1l2m3n4o5p6q7r8s9t0"
+  },
+  {
+    "origin": "LHR",
+    "destination": "JFK",
+    "departureDate": "2023-05-25",
+    "returnDate": "2023-06-01",
+    "seatAvailability": 10,
+    "price": {
+      "amount": 850,
+      "currency": "EUR"
+    },
+    "offerType": "ExactMatch",
+    "uuid": "u1v2w3x4y5z6a7b8c9d0"
+  },
+  {
+    "origin": "LAX",
+    "destination": "TYO",
+    "departureDate": "2023-06-10",
+    "returnDate": "2023-06-17",
+    "seatAvailability": "15",
+    "price": {
+      "amount": "1200",
+      "currency": "EUR"
+    },
+    "offerType": "amadeusBestPrice",
+    "uuid": "e1f2g3h4i5j6k7l8m9n0"
+  },
+  {
+    "origin": "LAX",
+    "destination": "TYO",
+    "departureDate": "2023-07-05",
+    "returnDate": "2023-07-12",
+    "seatAvailability": "9",
+    "price": {
+      "amount": "1250",
+      "currency": "EUR"
+    },
+    "offerType": "amadeusBestPrice",
+    "uuid": "o1p2q3r4s5t6u7v8w9x0"
+  },
+  {
+    "origin": "LAX",
+    "destination": "TYO",
+    "departureDate": "2023-05-25",
+    "returnDate": "2023-06-01",
+    "seatAvailability": "11",
+    "price": {
+      "amount": "1300",
+      "currency": "EUR"
+    },
+    "offerType": "ExactMatch",
+    "uuid": "y1z2a3b4c5d6e7f8g9h0"
+  },
+  {
+    "origin": "PAR",
+    "destination": "FCO",
+    "departureDate": "2023-06-20",
+    "returnDate": "2023-06-27",
+    "seatAvailability": "14",
+    "price": {
+      "amount": "300",
+      "currency": "EUR"
+    },
+    "offerType": "amadeusBestPrice",
+    "uuid": "i1j2k3l4m5n6o7p8q9r0"
+  },
+  {
+    "origin": "PAR",
+    "destination": "FCO",
+    "departureDate": "2023-07-10",
+    "returnDate": "2023-07-17",
+    "seatAvailability": 10,
+    "price": {
+      "amount": 350,
+      "currency": "EUR"
+    },
+    "offerType": "amadeusBestPrice",
+    "uuid": "s1t2u3v4w5x6y7z8a9b0"
+  },
+  {
+    "origin": "PAR",
+    "destination": "FCO",
+    "departureDate": "2023-05-25",
+    "returnDate": "2023-06-01",
+    "seatAvailability": 12,
+    "price": {
+      "amount": 400,
+      "currency": "EUR"
+    },
+    "offerType": "ExactMatch",
+    "uuid": "c1d2e3f4g5h6i7j8k9l0"
+  },
+  {
+    "origin": "SYD",
+    "destination": "SIN",
+    "departureDate": "2023-06-30",
+    "returnDate": "2023-07-07",
+    "seatAvailability": 16,
+    "price": {
+      "amount": 900,
+      "currency": "EUR"
+    },
+    "offerType": "amadeusBestPrice",
+    "uuid": "m1n2o3p4q5r6s7t8u9v0"
+  },
+  {
+    "origin": "SYD",
+    "destination": "SIN",
+    "departureDate": "2023-08-01",
+    "returnDate": "2023-08-08",
+    "seatAvailability": "13",
+    "price": {
+      "amount": "950",
+      "currency": "EUR"
+    },
+    "offerType": "amadeusBestPrice",
+    "uuid": "w1x2y3z4a5b6c7d8e9f0"
+  },
+  {
+    "origin": "SYD",
+    "destination": "SIN",
+    "departureDate": "2023-05-25",
+    "returnDate": "2023-06-01",
+    "seatAvailability": "11",
+    "price": {
+      "amount": "1000",
+      "currency": "EUR"
+    },
+    "offerType": "ExactMatch",
+    "uuid": "g1h2i3j4k5l6m7n8o9p0"
+  },
+  {
+    "origin": "BER",
+    "destination": "AMS",
+    "departureDate": "2023-06-18",
+    "returnDate": "2023-06-25",
+    "seatAvailability": "17",
+    "price": {
+      "amount": "200",
+      "currency": "EUR"
+    },
+    "offerType": "amadeusBestPrice",
+    "uuid": "q1r2s3t4u5v6w7x8y9z0"
+  },
+  {
+    "origin": "BER",
+    "destination": "AMS",
+    "departureDate": "2023-07-15",
+    "returnDate": "2023-07-22",
+    "seatAvailability": "14",
+    "price": {
+      "amount": "250",
+      "currency": "EUR"
+    },
+    "offerType": "amadeusBestPrice",
+    "uuid": "a1b2c3d333e5f6g7h8i9j0"
+  },
+  {
+    "origin": "BUE",
+    "destination": "RIO",
+    "departureDate": "2023-06-12",
+    "returnDate": "2023-06-19",
+    "seatAvailability": 18,
+    "price": {
+      "amount": 500,
+      "currency": "EUR"
+    },
+    "offerType": "amadeusBestPrice",
+    "uuid": "r1s2t3u4v5w6x7y8z9a0"
+  },
+  {
+    "origin": "BUE",
+    "destination": "RIO",
+    "departureDate": "2023-07-03",
+    "returnDate": "2023-07-10",
+    "seatAvailability": 14,
+    "price": {
+      "amount": 550,
+      "currency": "EUR"
+    },
+    "offerType": "amadeusBestPrice",
+    "uuid": "b1c2d3e4f5g6h7i8j9k0"
+  },
+  {
+    "origin": "BUE",
+    "destination": "RIO",
+    "departureDate": "2023-05-25",
+    "returnDate": "2023-06-01",
+    "seatAvailability": 16,
+    "price": {
+      "amount": 600,
+      "currency": "EUR"
+    },
+    "offerType": "ExactMatch",
+    "uuid": "l1m2n3o4p5q6r7s8t9u0"
+  },
+  {
+    "origin": "LIM",
+    "destination": "SCL",
+    "departureDate": "2023-06-08",
+    "returnDate": "2023-06-15",
+    "seatAvailability": "20",
+    "price": {
+      "amount": "300",
+      "currency": "EUR"
+    },
+    "offerType": "amadeusBestPrice",
+    "uuid": "v1w2x3y4z5a6b7c8d9e0"
+  },
+  {
+    "origin": "LIM",
+    "destination": "SCL",
+    "departureDate": "2023-07-06",
+    "returnDate": "2023-07-13",
+    "seatAvailability": "17",
+    "price": {
+      "amount": "350",
+      "currency": "EUR"
+    },
+    "offerType": "amadeusBestPrice",
+    "uuid": "f1g2h3i4j5k6l7m8n9o0"
+  },
+  {
+    "origin": "LIM",
+    "destination": "SCL",
+    "departureDate": "2023-05-25",
+    "returnDate": "2023-06-01",
+    "seatAvailability": 19,
+    "price": {
+      "amount": 400,
+      "currency": "EUR"
+    },
+    "offerType": "ExactMatch",
+    "uuid": "p1q2r3s4t5u6v7w8x9y0"
+  },
+  {
+    "origin": "BOG",
+    "destination": "CCS",
+    "departureDate": "2023-06-11",
+    "returnDate": "2023-06-18",
+    "seatAvailability": 13,
+    "price": {
+      "amount": 250,
+      "currency": "EUR"
+    },
+    "offerType": "amadeusBestPrice",
+    "uuid": "z1a2b3c4d5e6f7g8h9i0"
+  },
+  {
+    "origin": "BOG",
+    "destination": "CCS",
+    "departureDate": "2023-07-09",
+    "returnDate": "2023-07-16",
+    "seatAvailability": "11",
+    "price": {
+      "amount": "300",
+      "currency": "EUR"
+    },
+    "offerType": "amadeusBestPrice",
+    "uuid": "j1k2l3m4n5o6p7q8r9s0"
+  }
+]
