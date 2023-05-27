@@ -11,6 +11,7 @@ import {
   Badge,
   useMediaQuery,
 } from "@chakra-ui/react";
+import { useTranslations } from "next-intl";
 import { TbArrowMoveRight } from "react-icons/tb";
 import { useFormatDayMonth } from "@/app/hooks/useFormatDateDayMonth";
 import { useFormatLocalizePrice } from "@/app/hooks/useFormatLocalizePrice";
@@ -24,6 +25,7 @@ export const FlightCard = ({
   seatAvailability,
 }: PriceOffer) => {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
+  const t = useTranslations("flight_search");
   const formattedLocalizedPrice = useFormatLocalizePrice(price);
   const formattedDepartureDate = useFormatDayMonth(departureDate);
   const formattedReturnDate = useFormatDayMonth(returnDate);
@@ -57,7 +59,7 @@ export const FlightCard = ({
                 colorScheme="yellow"
                 textTransform="lowercase"
               >
-                only {seatAvailability} seats available
+                {t("results.no_seats", { seatAvailability })}
               </Badge>
             </Center>
           )}
@@ -81,7 +83,7 @@ export const FlightCard = ({
             borderBottomLeftRadius={3}
             borderBottomRightRadius={3}
           >
-            only {seatAvailability} seats available
+            {t("results.no_seats", { seatAvailability })}
           </Text>
         </CardBody>
       )}

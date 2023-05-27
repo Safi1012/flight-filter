@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { Card, CardBody, Heading, Text } from "@chakra-ui/react";
 import { FlightCard } from "@/app/components/FlightCard";
 import FlightFilter from "@/app/components/FlightFilter";
@@ -12,6 +13,7 @@ interface FlightSearchProps {
 export default function FlightSearch({ priceOffers }: FlightSearchProps) {
   const [filterByOrigin, setFilterByOrigin] = useState("");
   const [filterByDestination, setFilterByDestination] = useState("");
+  const t = useTranslations("flight_search");
 
   const filteredPriceOffers = priceOffers.filter(
     (priceOffer) =>
@@ -24,7 +26,7 @@ export default function FlightSearch({ priceOffers }: FlightSearchProps) {
   return (
     <>
       <Heading fontSize={22} mt={16} mb={4}>
-        Filters
+        {t("headline.filters")}
       </Heading>
       <FlightFilter
         priceOffers={priceOffers}
@@ -35,7 +37,7 @@ export default function FlightSearch({ priceOffers }: FlightSearchProps) {
       ></FlightFilter>
 
       <Heading fontSize={22} mt={16} mb={4}>
-        Results
+        {t("headline.results")}
       </Heading>
       {filteredPriceOffers.map((priceOffer) => (
         <FlightCard key={priceOffer.uuid} {...priceOffer}></FlightCard>
@@ -45,8 +47,7 @@ export default function FlightSearch({ priceOffers }: FlightSearchProps) {
         <Card mb={4}>
           <CardBody>
             <Text fontSize={"large"} as="b" color={"pink.700"}>
-              Sorry, currently there are no flights available from{" "}
-              {filterByOrigin} to {filterByDestination}.
+              {t("results.no_match", { filterByOrigin, filterByDestination })}
             </Text>
           </CardBody>
         </Card>

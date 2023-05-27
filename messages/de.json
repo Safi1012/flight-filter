@@ -1,0 +1,22 @@
+{
+  "flight_search": {
+    "headline": {
+      "results": "Ergebnisse",
+      "filters": "Filter"
+    },
+    "filters": {
+      "origin": {
+        "label": "Filter nach Start",
+        "placeholder": "Wähle Start"
+      },
+      "destination": {
+        "label": "Filter nach Ziel",
+        "placeholder": "Wähle Ziel"
+      }
+    },
+    "results": {
+      "no_seats": "nur {seatAvailability} Sitze verfügbar",
+      "no_match": "Leider gibt es keine Flüge mehr von {filterByOrigin} nach {filterByDestination}."
+    }
+  }
+}

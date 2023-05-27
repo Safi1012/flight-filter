@@ -1,0 +1,22 @@
+{
+  "flight_search": {
+    "headline": {
+      "results": "Results",
+      "filters": "Filters"
+    },
+    "filters": {
+      "origin": {
+        "label": "Filter by origin",
+        "placeholder": "Select origin"
+      },
+      "destination": {
+        "label": "Filter by destination",
+        "placeholder": "Select destination"
+      }
+    },
+    "results": {
+      "no_seats": "only {seatAvailability} seats available",
+      "no_match": "Sorry, currently there are no flights available from {filterByOrigin} to {filterByDestination}."
+    }
+  }
+}

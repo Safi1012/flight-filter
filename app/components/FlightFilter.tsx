@@ -1,5 +1,6 @@
 "use client";
 
+import { useTranslations } from "next-intl";
 import { Card, CardBody, Center, GridItem, SimpleGrid } from "@chakra-ui/react";
 import FormControlSelect from "@/app/shared/FormControlSelect";
 
@@ -14,6 +15,7 @@ export default function FlightFilter({
   onOriginChange,
   onDestinationChange,
 }: FlightFilterProps) {
+  const t = useTranslations("flight_search");
   const origins = [
     ...new Set(priceOffers.map((priceOffer) => priceOffer.origin)),
   ];
@@ -35,8 +37,8 @@ export default function FlightFilter({
             <GridItem colSpan={1} alignItems={"flex-start"}>
               <Center>
                 <FormControlSelect
-                  label="Filter by origin"
-                  placeholder="Select origin"
+                  label={t("filters.origin.label")}
+                  placeholder={t("filters.origin.placeholder")}
                   options={origins}
                   onChange={(value) => onOriginChange(value)}
                 ></FormControlSelect>
@@ -46,8 +48,8 @@ export default function FlightFilter({
             <GridItem colSpan={1} alignItems={"flex-start"}>
               <Center>
                 <FormControlSelect
-                  label="Filter by destination"
-                  placeholder="Select destination"
+                  label={t("filters.destination.label")}
+                  placeholder={t("filters.destination.placeholder")}
                   options={destinations}
                   onChange={(value) => onDestinationChange(value)}
                 ></FormControlSelect>
