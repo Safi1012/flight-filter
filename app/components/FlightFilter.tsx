@@ -1,7 +1,7 @@
 "use client";
 
 import { Card, CardBody, Center, GridItem, SimpleGrid } from "@chakra-ui/react";
-import FormControlSelect from "./FormControlSelect";
+import FormControlSelect from "@/app/shared/FormControlSelect";
 
 interface FlightFilterProps {
   priceOffers: PriceOffer[];

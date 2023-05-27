@@ -12,8 +12,8 @@ import {
   useMediaQuery,
 } from "@chakra-ui/react";
 import { TbArrowMoveRight } from "react-icons/tb";
-import { useFormatDayMonth } from "../hooks/useFormatDateDayMonth";
-import { useFormatLocalizePrice } from "../hooks/useFormatLocalizePrice";
+import { useFormatDayMonth } from "@/app/hooks/useFormatDateDayMonth";
+import { useFormatLocalizePrice } from "@/app/hooks/useFormatLocalizePrice";
 
 export const FlightCard = ({
   departureDate,

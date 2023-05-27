@@ -3,7 +3,7 @@
 import { CacheProvider } from "@chakra-ui/next-js";
 import { ChakraProvider, extendTheme, Container } from "@chakra-ui/react";
 import { Open_Sans } from "next/font/google";
-import Header from "./components/Header";
+import Header from "@/app/shared/Header";
 
 const headingFont = Open_Sans({
   weight: ["700"],

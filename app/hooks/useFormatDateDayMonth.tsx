@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { formatDateToDayMonth } from "../utils/date";
+import { formatDateToDayMonth } from "@/app/utils/date";
 
 /**
  * Custom React hook that formats a given date string to a day and month format based on the user's locale.

@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import { Card, CardBody, Heading, Text } from "@chakra-ui/react";
-import { FlightCard } from "./FlightCard";
-import FlightFilter from "./FlightFilter";
+import { FlightCard } from "@/app/components/FlightCard";
+import FlightFilter from "@/app/components/FlightFilter";
 
 interface FlightSearchProps {
   priceOffers: PriceOffer[];

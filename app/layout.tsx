@@ -1,6 +1,5 @@
-import Header from "./components/Header";
-import "./globals.css";
-import { Providers } from "./providers";
+import "@/app/globals.css";
+import { Providers } from "@/app/providers";
 
 export const metadata = {
   title: "Flight Filter",
@@ -14,6 +13,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="./favicon.ico" sizes="any" />
+      </head>
       <body>
         <Providers>{children}</Providers>
       </body>

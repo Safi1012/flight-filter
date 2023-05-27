@@ -1,5 +1,5 @@
 import { renderHook } from "@testing-library/react";
-import { useFormatLocalizePrice } from "./useFormatLocalizePrice";
+import { useFormatLocalizePrice } from "@/app/hooks/useFormatLocalizePrice";
 
 describe("useFormatLocalizePrice", () => {
   it("should format and localize the price correctly", () => {

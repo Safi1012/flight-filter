@@ -1,4 +1,4 @@
-import { formatDateToDayMonth } from "./date";
+import { formatDateToDayMonth } from "@/app/utils/date";
 
 describe("formatDateToDayMonth", () => {
   beforeEach(() => {

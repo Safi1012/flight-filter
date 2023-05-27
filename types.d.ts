@@ -8,6 +8,6 @@ interface PriceOffer {
     amount: number;
     currency: string;
   };
-  offerType: "amadeusBestPrice" | "ExactMatch";
+  offerType: string;
   uuid: string;
 }

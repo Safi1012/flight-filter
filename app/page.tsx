@@ -1,4 +1,4 @@
-import FlightSearch from "./components/FlightSearch";
+import FlightSearch from "@/app/components/FlightSearch";
 import getPriceOffer from "@/app/lib/getPriceOffer";
 
 export default async function FlightsPage() {
