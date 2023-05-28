@@ -8,7 +8,13 @@ import paperPlane from "../../public/paper_plane.svg";
 export default function Header() {
   return (
     <header>
-      <Box bg={"white"} w={"100vw"}>
+      <Box
+        bg={"white"}
+        w={"100vw"}
+        boxShadow={"base"}
+        position={"fixed"}
+        zIndex={1}
+      >
         <Container maxW={["20em", "40em", "40em", "80em"]}>
           <Box py={4}>
             <Link href="/">

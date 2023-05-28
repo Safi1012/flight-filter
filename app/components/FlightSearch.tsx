@@ -25,7 +25,7 @@ export default function FlightSearch({ priceOffers }: FlightSearchProps) {
 
   return (
     <>
-      <Heading fontSize={22} mt={16} mb={4}>
+      <Heading fontSize={22} mt={28} mb={4}>
         {t("headline.filters")}
       </Heading>
       <FlightFilter
@@ -36,7 +36,7 @@ export default function FlightSearch({ priceOffers }: FlightSearchProps) {
         }
       ></FlightFilter>
 
-      <Heading fontSize={22} mt={16} mb={4}>
+      <Heading fontSize={22} mt={[8, 12]} mb={4}>
         {t("headline.results")}
       </Heading>
       {filteredPriceOffers.map((priceOffer) => (
