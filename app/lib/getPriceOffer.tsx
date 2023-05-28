@@ -5,7 +5,12 @@
  * @throws An error if the data fetching fails or the response is not successful.
  */
 export default async function getPriceOffer<T>(): Promise<T> {
-  const res = await fetch("http://localhost:3000/api/price-offer", {
+  const isProd = process.env.NODE_ENV === "production";
+  const server = isProd
+    ? "https://flight-filter.vercel.app/api/price-offer"
+    : "http://localhost:3000/api/price-offer";
+
+  const res = await fetch(server, {
     // makes sure the user always gets the newest version (it's not really needed with mock data).
     // In the real world, we want the user to always get the newest data from the original API "promotions/Price_Offer".
     cache: "no-store",
