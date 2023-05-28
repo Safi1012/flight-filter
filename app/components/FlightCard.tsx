@@ -31,7 +31,7 @@ export const FlightCard = ({
   const formattedReturnDate = useFormatDayMonth(returnDate);
 
   return (
-    <Card mb={4}>
+    <Card mb={4} data-testid="flight-card">
       <CardBody>
         <Flex justifyContent={"space-between"}>
           <Flex>

@@ -26,6 +26,19 @@
     "uuid": "k1l2m3n4o5p6q7r8s9t0"
   },
   {
+    "origin": "JFK",
+    "destination": "BER",
+    "departureDate": "2023-07-12",
+    "returnDate": "2023-07-22",
+    "seatAvailability": 8,
+    "price": {
+      "amount": 550,
+      "currency": "EUR"
+    },
+    "offerType": "amadeusBestPrice",
+    "uuid": "k1l2m3n4o5p6q7r8s9hju"
+  },
+  {
     "origin": "LHR",
     "destination": "JFK",
     "departureDate": "2023-05-25",
